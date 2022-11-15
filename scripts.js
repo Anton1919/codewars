@@ -50,8 +50,14 @@
 
 ////////////////////////////
 
-const squareOfNumber = (num) => {
-  return num * num;
+// const squareOfNumber = (num) => {
+//   return num * num;
+// };
+
+// console.log(squareOfNumber(3));
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump ? true : false;
 };
 
-console.log(squareOfNumber(3));
+console.log(zeroFuel(100, 50, 1));
