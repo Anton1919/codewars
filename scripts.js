@@ -31,19 +31,27 @@
 
 // console.log(howManyLightsabersDoYouOwn('Zach'));
 
-function spoonerize(words) {
-  const picking = words.split(' ')[1];
-  const picking1 = picking[0]; // p
-  const str = words[0]; // n
-  const str2 = words.split(' ')[1][0]; // p
+// function spoonerize(words) {
+//   const picking = words.split(' ')[1];
+//   const picking1 = picking[0]; // p
+//   const str = words[0]; // n
+//   const str2 = words.split(' ')[1][0]; // p
 
-  const niking = picking.replace(picking1, str);
+//   const niking = picking.replace(picking1, str);
 
-  const word1 = words.replace(str, str2).replace().split(' ')[0];
+//   const word1 = words.replace(str, str2).replace().split(' ')[0];
 
-  return word1 + ' ' + niking;
-}
+//   return word1 + ' ' + niking;
+// }
 
-console.log(spoonerize('nit picking'));
+// console.log(spoonerize('nit picking'));
 
 //'pit nicking'
+
+////////////////////////////
+
+const squareOfNumber = (num) => {
+  return num * num;
+};
+
+console.log(squareOfNumber(3));
