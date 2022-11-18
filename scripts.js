@@ -56,8 +56,31 @@
 
 // console.log(squareOfNumber(3));
 
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  return mpg * fuelLeft >= distanceToPump ? true : false;
-};
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   return mpg * fuelLeft >= distanceToPump ? true : false;
+// };
+//
+// console.log(zeroFuel(100, 50, 1));
 
-console.log(zeroFuel(100, 50, 1));
+function bmi(weight, height) {
+  const body = weight / (height * height)
+  if(body <= 18.5) {
+   return  "Underweight"
+  } else if (body <= 25.0) {
+    return "Normal"
+  } else if (body <= 30.0) {
+    return  "Overweight"
+  } else if ( body > 30 ) {
+    return "Obese"
+  }
+}
+
+console.log(bmi(80, 1.80))
+
+// if bmi <= 18.5 return "Underweight"
+//
+// if bmi <= 25.0 return "Normal"
+//
+// if bmi <= 30.0 return "Overweight"
+//
+// if bmi > 30 return "Obese"
