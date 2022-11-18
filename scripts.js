@@ -62,25 +62,50 @@
 //
 // console.log(zeroFuel(100, 50, 1));
 
-function bmi(weight, height) {
-  const body = weight / (height * height)
-  if(body <= 18.5) {
-   return  "Underweight"
-  } else if (body <= 25.0) {
-    return "Normal"
-  } else if (body <= 30.0) {
-    return  "Overweight"
-  } else if ( body > 30 ) {
-    return "Obese"
+// function bmi(weight, height) {
+//   const body = weight / (height * height)
+//   if(body <= 18.5) {
+//    return  "Underweight"
+//   } else if (body <= 25.0) {
+//     return "Normal"
+//   } else if (body <= 30.0) {
+//     return  "Overweight"
+//   } else if ( body > 30 ) {
+//     return "Obese"
+//   }
+// }
+//
+// console.log(bmi(80, 1.80))
+//
+// // if bmi <= 18.5 return "Underweight"
+// //
+// // if bmi <= 25.0 return "Normal"
+// //
+// // if bmi <= 30.0 return "Overweight"
+// //
+// // if bmi > 30 return "Obese"
+
+const orderedCount = function (text) {
+
+  let result = [];
+  for (let i = 0; i < text.length; i++) {
+    let count = 0;
+    for (let j = 0; j < result.length; j++) {
+      if (result[j][0] === text[i]) {
+        count++;
+      }
+    }
+    if (count === 0) {
+      for (let j = i; j < text.length; j++) {
+        if (text[j] === text[i]) {
+          count++;
+        }
+      }
+      result.push([text[i], count]);
+    }
   }
+  return result;
+
 }
-
-console.log(bmi(80, 1.80))
-
-// if bmi <= 18.5 return "Underweight"
-//
-// if bmi <= 25.0 return "Normal"
-//
-// if bmi <= 30.0 return "Overweight"
-//
-// if bmi > 30 return "Obese"
+//[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
+console.log(orderedCount("abracadabra"))
