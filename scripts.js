@@ -85,6 +85,18 @@
 // //
 // // if bmi > 30 return "Obese"
 
+function isPythagoreanTriple(integers) {
+  const c = Math.pow(Math. max(...integers), 2)
+  const a = Math.pow(integers.filter(el => el < c )[0], 2)
+  const b = Math.pow(integers.filter(el => el < c )[1], 2)
+
+  console.log(c , a, b)
+
+  return c === a + b
+}
+
+console.log(isPythagoreanTriple([72, 78, 30]))
+
 const orderedCount = function (text) {
 
   let result = [];
@@ -109,3 +121,4 @@ const orderedCount = function (text) {
 }
 //[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
 console.log(orderedCount("abracadabra"))
+
