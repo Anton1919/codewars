@@ -96,10 +96,22 @@
 // }
 // console.log(isPythagoreanTriple([72, 78, 30]))
 
-const str = () => "Hello World"
-console.log(str())
+// const str = () => "Hello World"
+// console.log(str())
 
+function saleHotdogs(n){
 
+  return n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
+  //
+  // if(n < 5) {
+  //   return n * 100
+  // } else if () {
+  //   return n * 95
+  // } else if (n >= 10) {
+  //   return n * 90
+  // }
+}
+console.log(saleHotdogs(4))
 
 const orderedCount = function (text) {
 
