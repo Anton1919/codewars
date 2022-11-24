@@ -96,8 +96,8 @@
 // }
 // console.log(isPythagoreanTriple([72, 78, 30]))
 
-const str = () => "Hello World"
-console.log(str())
+// const str = () => "Hello World"
+// console.log(str())
 
 
 
