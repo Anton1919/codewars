@@ -99,7 +99,7 @@
 // const str = () => "Hello World"
 // console.log(str())
 
-function saleHotdogs(n){
+/*function saleHotdogs(n){
 
   return n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
   //
@@ -111,18 +111,31 @@ function saleHotdogs(n){
   //   return n * 90
   // }
 }
-console.log(saleHotdogs(4))
+console.log(saleHotdogs(4))*/
+
+function barTriang(p1, p2, p3){
+    let x = +((p1[0] + p2[0] + p3[0]) / 3).toFixed(4)
+    let y = +((p1[1] + p2[1] + p3[1]) / 3).toFixed(4)
+
+    return [x, y]
+}
+
+console.log(barTriang([4, 6], [12, 4], [10, 10])) // [8.6667, 6.6667]
+
 
 const orderedCount = function (text) {
 
-  let result = [];
-  for (let i = 0; i < text.length; i++) {
+   let result = [];
+
+   for (let i = 0; i < text.length; i++) {
     let count = 0;
+
     for (let j = 0; j < result.length; j++) {
       if (result[j][0] === text[i]) {
         count++;
       }
     }
+
     if (count === 0) {
       for (let j = i; j < text.length; j++) {
         if (text[j] === text[i]) {
@@ -137,4 +150,3 @@ const orderedCount = function (text) {
 }
 //[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
 console.log(orderedCount("abracadabra"))
-
