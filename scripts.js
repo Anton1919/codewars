@@ -130,11 +130,16 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(mystery())
 
-function sumStr(a,b) {
-    return (+a + +b).toString()
-}
+// function sumStr(a,b) {
+//     return (+a + +b).toString()
+// }
+//
+// console.log(sumStr("4","5"))
 
-console.log(sumStr("4","5"))
+function otherAngle(a, b) {
+    return 180 - (a + b)
+}
+console.log(otherAngle(40, 60))
 
 const orderedCount = function (text) {
 
