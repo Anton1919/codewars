@@ -113,15 +113,22 @@
 }
 console.log(saleHotdogs(4))*/
 
-function barTriang(p1, p2, p3){
+/*function barTriang(p1, p2, p3){
     let x = +((p1[0] + p2[0] + p3[0]) / 3).toFixed(4)
     let y = +((p1[1] + p2[1] + p3[1]) / 3).toFixed(4)
 
     return [x, y]
 }
 
-console.log(barTriang([4, 6], [12, 4], [10, 10])) // [8.6667, 6.6667]
+console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 
+function mystery() {
+    var results =
+        {sanity: 'Hello'};
+    return results;
+}
+
+console.log(mystery())
 
 const orderedCount = function (text) {
 
