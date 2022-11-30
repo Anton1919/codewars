@@ -121,14 +121,20 @@ console.log(saleHotdogs(4))*/
 }
 
 console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
+//
+// function mystery() {
+//     var results =
+//         {sanity: 'Hello'};
+//     return results;
+// }
+//
+// console.log(mystery())
 
-function mystery() {
-    var results =
-        {sanity: 'Hello'};
-    return results;
+function sumStr(a,b) {
+    return (+a + +b).toString()
 }
 
-console.log(mystery())
+console.log(sumStr("4","5"))
 
 const orderedCount = function (text) {
 
