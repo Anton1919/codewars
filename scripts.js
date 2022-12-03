@@ -147,6 +147,8 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(repeatStr(3, "*"))
 
 
+
+
 const orderedCount = function (text) {
 
    let result = [];
