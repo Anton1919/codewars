@@ -147,32 +147,57 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(repeatStr(3, "*"))
 
 
-
-
 const orderedCount = function (text) {
 
-   let result = [];
+    let result = [];
 
-   for (let i = 0; i < text.length; i++) {
-    let count = 0;
+    for (let i = 0; i < text.length; i++) {
+        let count = 0;
 
-    for (let j = 0; j < result.length; j++) {
-      if (result[j][0] === text[i]) {
-        count++;
-      }
-    }
-
-    if (count === 0) {
-      for (let j = i; j < text.length; j++) {
-        if (text[j] === text[i]) {
-          count++;
+        for (let j = 0; j < result.length; j++) {
+            if (result[j][0] === text[i]) {
+                count++;
+            }
         }
-      }
-      result.push([text[i], count]);
+
+        if (count === 0) {
+            for (let j = i; j < text.length; j++) {
+                if (text[j] === text[i]) {
+                    count++;
+                }
+            }
+            result.push([text[i], count]);
+        }
     }
-  }
-  return result;
+    return result;
 
 }
 //[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
 console.log(orderedCount("abracadabra"))
+
+
+////////////////////////////////////////////////////////////////////
+
+// function stray(numbers) {
+//
+//     const num = numbers[0]
+//     let result = []
+//
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (num !== numbers[i]) {
+//             result.push(numbers[i])
+//         }
+//     }
+//     return +result
+// }
+//
+// console.log(stray([1, 1, 2, 1, 1]))
+// console.log(stray([17, 17, 3, 17, 17, 17, 17]))
+
+function stray(numbers) {
+    return numbers.reduce((a, b) => a ^ b)
+}
+
+console.log(stray([1, 1, 2, 1, 1]))
+console.log(stray([17, 17, 3, 17, 17, 17, 17]))
