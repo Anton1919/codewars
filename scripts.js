@@ -177,27 +177,20 @@ console.log(orderedCount("abracadabra"))
 
 
 ////////////////////////////////////////////////////////////////////
-
+//
 // function stray(numbers) {
-//
-//     const num = numbers[0]
-//     let result = []
-//
-//
+//     console.log(numbers.lastIndexOf(1))
 //     for (let i = 0; i < numbers.length; i++) {
-//         if (num !== numbers[i]) {
-//             result.push(numbers[i])
+//         if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])) {
+//             return numbers[i]
 //         }
 //     }
-//     return +result
 // }
-//
-// console.log(stray([1, 1, 2, 1, 1]))
-// console.log(stray([17, 17, 3, 17, 17, 17, 17]))
 
-function stray(numbers) {
-    return numbers.reduce((a, b) => a ^ b)
+function cockroachSpeed(s) {
+    let a = (s*1000*100) / 3600
+
+    return a.toFixed()
 }
 
-console.log(stray([1, 1, 2, 1, 1]))
-console.log(stray([17, 17, 3, 17, 17, 17, 17]))
+console.log(cockroachSpeed(1.08))
