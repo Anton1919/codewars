@@ -187,6 +187,8 @@ console.log(orderedCount("abracadabra"))
 //     }
 // }
 
+
+
 function cockroachSpeed(s) {
     let a = (s*1000*100) / 3600
 
