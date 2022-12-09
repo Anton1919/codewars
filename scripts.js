@@ -195,4 +195,5 @@ function cockroachSpeed(s) {
     return a.toFixed()
 }
 
+
 console.log(cockroachSpeed(1.08))
