@@ -187,13 +187,17 @@ console.log(orderedCount("abracadabra"))
 //     }
 // }
 
-
-
-function cockroachSpeed(s) {
-    let a = (s*1000*100) / 3600
-
-    return a.toFixed()
+function isInStrictMode() {
+ return  !this
 }
 
+console.log(isInStrictMode())
 
-console.log(cockroachSpeed(1.08))
+// function cockroachSpeed(s) {
+//     let a = (s*1000*100) / 3600
+//
+//     return a.toFixed()
+// }
+//
+//
+// console.log(cockroachSpeed(1.08))
