@@ -188,21 +188,22 @@ console.log(orderedCount("abracadabra"))
 // }
 
 
-function DNAStrand(dna){
 
-    let result = []
-    for (let i = 0; i < dna.length; i++) {
-        dna[i] === "A" && result.push("T")
-        dna[i] === "T" && result.push("A")
-        dna[i] === "G" && result.push("C")
-        dna[i] === "C" && result.push("G")
-
-        console.log(dna[i])
-    }
-    return result.join("")
-}
-
-console.log(DNAStrand("ATTGC"))
+// function DNAStrand(dna){
+//
+//     let result = []
+//     for (let i = 0; i < dna.length; i++) {
+//         dna[i] === "A" && result.push("T")
+//         dna[i] === "T" && result.push("A")
+//         dna[i] === "G" && result.push("C")
+//         dna[i] === "C" && result.push("G")
+//
+//         console.log(dna[i])
+//     }
+//     return result.join("")
+// }
+//
+// console.log(DNAStrand("ATTGC"))
 //"TAACG"
 // function isInStrictMode() {
 //  return  !this
