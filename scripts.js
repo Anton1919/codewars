@@ -177,6 +177,20 @@ console.log(orderedCount("abracadabra"))
 
 
 ////////////////////////////////////////////////////////////////////
+
+// function hexHash(code){
+//
+//     var hash = 0, i = 0, len = code.length;
+//     while ( i < len ) {
+//         hash  = ((hash << 5) - hash + code.charCodeAt(i++)) << 0;
+//     }
+//     return hash;
+// }
+//
+// console.log(hexHash('Yo')) // 113
+// console.log(hexHash('Hello, World')) // 113
+
+
 //
 // function stray(numbers) {
 //     console.log(numbers.lastIndexOf(1))
