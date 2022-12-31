@@ -203,7 +203,6 @@ console.log(orderedCount("abracadabra"))
 // }
 
 
-
 // function DNAStrand(dna){
 //
 //     let result = []
@@ -235,3 +234,33 @@ console.log(orderedCount("abracadabra"))
 //
 
 // console.log(cockroachSpeed(1.08))
+
+// function solution(str, ending){
+//     const lengthEnding = ending.length
+//
+//     if (ending === "") {
+//         return true
+//     } else {
+//         return str.slice(-lengthEnding) === ending
+//     }
+//
+// }
+// console.log(solution('abcde', 'cde')) //true
+// console.log(solution('abcde', 'abc')) //false
+// console.log(solution('abcde', '')) //false
+
+// function shortcut(string) {
+//     const vowels = ['a', 'e', 'i', 'o', 'u']
+//    return string.split('').filter(el => !vowels.includes(el)).join('')
+// }
+//
+// console.log(shortcut('hello')) // "hll"
+
+function shortcut(string) {
+
+}
+
+console.log(shortcut('hello')) // "hll"
+// console.log(shortcut("codewars")) // "cdwrs"
+
+// a, e, i, o, u
