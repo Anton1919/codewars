@@ -256,21 +256,27 @@ console.log(orderedCount("abracadabra"))
 //
 // console.log(shortcut('hello')) // "hll"
 
-function shortcut(string) {
-
-    let result = []
-    const vowels = ['a', 'e', 'i', 'o', 'u']
-    const str = string.split('')
-
-    for (let i = 0; i < str.length; i++) {
-        vowels.includes(str[i]) ? '' : result.push(str[i])
-    }
-    return result.join('')
-}
-
-console.log(shortcut('hello')) // "hll"
+// function shortcut(string) {
+//
+//     let result = []
+//     const vowels = ['a', 'e', 'i', 'o', 'u']
+//     const str = string.split('')
+//
+//     for (let i = 0; i < str.length; i++) {
+//         vowels.includes(str[i]) ? '' : result.push(str[i])
+//     }
+//     return result.join('')
+// }
+//
+// console.log(shortcut('hello')) // "hll"
 
 // console.log(shortcut("codewars")) // "cdwrs"
 
 // a, e, i, o, u
+
+const flatten = (array) => {
+    return array.flat()
+}
+
+console.log(flatten([[1,2,3],["a","b","c"],[1,2,3]])) // "cdwrs"
 
