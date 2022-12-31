@@ -179,7 +179,6 @@ console.log(orderedCount("abracadabra"))
 ////////////////////////////////////////////////////////////////////
 
 
-
 // function hexHash(code){
 //
 //     var hash = 0, i = 0, len = code.length;
