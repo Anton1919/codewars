@@ -146,7 +146,7 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 // console.log(repeatStr(3, "*"))
 
-
+///////////////////////////////////////////////////////////////////////////////////
 const orderedCount = function (text) {
 
     let result = [];
@@ -176,7 +176,7 @@ const orderedCount = function (text) {
 //[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
 console.log(orderedCount("abracadabra"))
 
-////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 
 // function hexHash(code){
@@ -258,9 +258,19 @@ console.log(orderedCount("abracadabra"))
 
 function shortcut(string) {
 
+    let result = []
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    const str = string.split('')
+
+    for (let i = 0; i < str.length; i++) {
+        vowels.includes(str[i]) ? '' : result.push(str[i])
+    }
+    return result.join('')
 }
 
 console.log(shortcut('hello')) // "hll"
+
 // console.log(shortcut("codewars")) // "cdwrs"
 
 // a, e, i, o, u
+
