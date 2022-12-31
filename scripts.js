@@ -274,9 +274,48 @@ console.log(orderedCount("abracadabra"))
 
 // a, e, i, o, u
 
-const flatten = (array) => {
-    return array.flat()
-}
+// const flatten = (array) => {
+//     return array.flat()
+// }
+//
+// console.log(flatten([[1,2,3],["a","b","c"],[1,2,3]])) // "cdwrs"
 
-console.log(flatten([[1,2,3],["a","b","c"],[1,2,3]])) // "cdwrs"
+// const complete = str => {
+//     let result = str.split('') // ['x', 'y', 'z']
+//
+//     const initialString = str.split('') // ['x', 'y', 'z']
+//
+//     const addElementIndex = str.length
+//
+//     for (let i = 0; i < str.length; i++) {
+//
+//         const copyResult = [...result]
+//
+//         result.splice(addElementIndex, 0, initialString.shift())
+//
+//         console.log(result.join(''))
+//         console.log(copyResult.reverse().join(''))
+//
+//         // if (result.join('') === copyResult.reverse().join('')) break
+//
+//         console.log(result)
+//
+//     }
+//     return result
+// }
+//
+// //console.log(complete("a")) // "aa"
+//  // console.log(complete("abab")) // "ababa"
+//  //console.log(complete("Baa")) // "BaaB"
+//  // console.log(complete("aOOa")) // "aOOaOOa"
+// //  console.log(complete("AaaaA")) // "AaaaAaaaA"
+// console.log(complete("xyz")) // "xyzyx"
+
+const complete = str => {
+    for(let i = 1; i <= str.length; i++) {
+        if (str.slice(i) == [...str.slice(i)].reverse().join(''))
+            return str + [...str.slice(0, i)].reverse().join('')
+    }
+}
+console.log(complete("xyz")) // "xyzyx"
 
