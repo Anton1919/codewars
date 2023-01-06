@@ -313,13 +313,45 @@ console.log(orderedCount("abracadabra"))
 // //  console.log(complete("AaaaA")) // "AaaaAaaaA"
 // console.log(complete("xyz")) // "xyzyx"
 
-const sumTo = (num) => {
-    let result = 0
+// const sumTo = (num) => {
+//     let result = 0
+//
+//     for (let i = 1; i <= num; i++) {
+//         result = result + i
+//         console.log({result, i})
+//     }
+//     return result
+// }
+//
+// console.log(sumTo(4))
 
-    for (let i = 1; i <= num; i++) {
-        result = result + i
-    }
-    return result
+// const sumTo = (num) => {
+//     // debugger
+//     if (num === 1) return 1
+//     else {
+//        return num + sumTo(num -1)
+//     }
+// }
+//
+// console.log(sumTo(3))
+
+// const factorial = (n) => {
+//     let result = 1
+//     for (let i = 1; i <= n; i++) {
+//         result = result * i
+//     }
+//     return result
+// }
+//
+// console.log(factorial(5))
+
+
+const factorial2 = (n) => {
+    debugger
+   if (n === 1) return 1
+    else {
+        return n * factorial2(n - 1)
+   }
 }
 
-console.log(sumTo(3))
+console.log(factorial2(4))
