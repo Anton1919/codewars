@@ -346,12 +346,29 @@ console.log(orderedCount("abracadabra"))
 // console.log(factorial(5))
 
 
-const factorial2 = (n) => {
-    debugger
-   if (n === 1) return 1
-    else {
-        return n * factorial2(n - 1)
-   }
+// const factorial2 = (n) => {
+//     // debugger
+//    if (n === 1) return 1
+//     else {
+//         return n * factorial2(n - 1)
+//    }
+// }
+//
+// console.log(factorial2(4))
+
+function flatten(array) {
+    const res = []
+    for (let i = 0; i < array.length; i++) {
+        if (Array.isArray(array[i])) {
+            const flat = flatten(array[i])
+            for (let j = 0; j < flat.length; j++) {
+                res.push(flat[j])
+            }
+        } else {
+            res.push(array[i])
+        }
+    }
+    return res
 }
 
-console.log(factorial2(4))
+console.log(flatten([[[[[[[[1]]]]]]], [[[[[[[[[2, 3]]]]]]]]], [[[4]]]])) // -> [1, 2, 3, 4]
