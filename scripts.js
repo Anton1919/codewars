@@ -371,4 +371,5 @@ function flatten(array) {
     return res
 }
 
+
 console.log(flatten([[[[[[[[1]]]]]]], [[[[[[[[[2, 3]]]]]]]]], [[[4]]]])) // -> [1, 2, 3, 4]
