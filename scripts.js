@@ -374,14 +374,29 @@ console.log(orderedCount("abracadabra"))
 //
 // console.log(flatten([[[[[[[[1]]]]]]], [[[[[[[[[2, 3]]]]]]]]], [[[4]]]])) // -> [1, 2, 3, 4]
 
-function descendingOrder(n){
-    const num = n.toString().split('').map(el => +el)
+// function descendingOrder(n){
+//     const num = n.toString().split('').map(el => +el)
+//
+//     num.sort((a, b) => a > b ? -1 :1)
+//
+//      return  +num.join('')
+//
+// }
+//
+// console.log(descendingOrder(12345 ))
+// console.log(descendingOrder(42145 ))
 
-    num.sort((a, b) => a > b ? -1 :1)
-
-     return  +num.join('')
-
+function sort(arr) {
+    for (let j = 0; j < arr.length; j++) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                let temp = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = temp
+            }
+        }
+    }
+    return arr
 }
 
-console.log(descendingOrder(12345 ))
-console.log(descendingOrder(42145 ))
+console.log(sort([133, 22, 14, 2, 2, 12, 3, 5, 5, 4, 5, 33]))
