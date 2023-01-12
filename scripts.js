@@ -1,3 +1,19 @@
+// Сортировка пузырьком
+// function sort(arr) {
+//     for (let j = 0; j < arr.length; j++) {
+//         for (let i = 0; i < arr.length - 1; i++) {
+//             if (arr[i] > arr[i + 1]) {
+//                 let temp = arr[i]
+//                 arr[i] = arr[i + 1]
+//                 arr[i + 1] = temp
+//             }
+//         }
+//     }
+//     return arr
+// }
+//
+// console.log(sort([133, 22, 14, 2, 2, 12, 3, 5, 5, 4, 5, 33]))
+
 // function buildString(...template){
 //   return `I like ${template.join(',')}!`;
 // }
@@ -147,34 +163,34 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(repeatStr(3, "*"))
 
 ///////////////////////////////////////////////////////////////////////////////////
-const orderedCount = function (text) {
-
-    let result = [];
-
-    for (let i = 0; i < text.length; i++) {
-        let count = 0;
-
-        for (let j = 0; j < result.length; j++) {
-            if (result[j][0] === text[i]) {
-                count++;
-            }
-        }
-
-        if (count === 0) {
-            for (let j = i; j < text.length; j++) {
-                if (text[j] === text[i]) {
-                    count++;
-                }
-            }
-            result.push([text[i], count]);
-        }
-    }
-    return result;
-
-}
-
-//[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
-console.log(orderedCount("abracadabra"))
+// const orderedCount = function (text) {
+//
+//     let result = [];
+//
+//     for (let i = 0; i < text.length; i++) {
+//         let count = 0;
+//
+//         for (let j = 0; j < result.length; j++) {
+//             if (result[j][0] === text[i]) {
+//                 count++;
+//             }
+//         }
+//
+//         if (count === 0) {
+//             for (let j = i; j < text.length; j++) {
+//                 if (text[j] === text[i]) {
+//                     count++;
+//                 }
+//             }
+//             result.push([text[i], count]);
+//         }
+//     }
+//     return result;
+//
+// }
+//
+// //[['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
+// console.log(orderedCount("abracadabra"))
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -386,17 +402,8 @@ console.log(orderedCount("abracadabra"))
 // console.log(descendingOrder(12345 ))
 // console.log(descendingOrder(42145 ))
 
-function sort(arr) {
-    for (let j = 0; j < arr.length; j++) {
-        for (let i = 0; i < arr.length - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                let temp = arr[i]
-                arr[i] = arr[i + 1]
-                arr[i + 1] = temp
-            }
-        }
-    }
-    return arr
-}
+const consonantCount = (str) => str.replace(/[aeiou]|[^a-z]/gi,'').length
 
-console.log(sort([133, 22, 14, 2, 2, 12, 3, 5, 5, 4, 5, 33]))
+
+console.log(consonantCount('XaeiouX'))
+
