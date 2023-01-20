@@ -408,18 +408,24 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(consonantCount('XaeiouX'))
 
 
-const isSquare = (n) => {
-    if (n < 0) {
-        return false
-    }
+// const isSquare = (n) => {
+//     if (n < 0) {
+//         return false
+//     }
+//
+//     for (let i = 0; i <= n; i++) {
+//         if (i * i === n) {
+//             return true
+//         } else if (i * i > n) {
+//             return false
+//         }
+//     }
+// }
+//
+// console.log(isSquare(-1))
 
-    for (let i = 0; i <= n; i++) {
-        if (i * i === n) {
-            return true
-        } else if (i * i > n) {
-            return false
-        }
-    }
+function trim(str, size) {
+  return  str.length <= size ? str : str.slice(0, str.length > 3 ? size -3 : size) + '...'
 }
 
-console.log(isSquare(-1))
+console.log(trim("Creating kata is fun", 14))
