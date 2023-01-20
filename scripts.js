@@ -424,8 +424,8 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(isSquare(-1))
 
-function trim(str, size) {
-  return  str.length <= size ? str : str.slice(0, str.length > 3 ? size -3 : size) + '...'
-}
-
-console.log(trim("Creating kata is fun", 14))
+// function trim(str, size) {
+//   return  str.length <= size ? str : str.slice(0, str.length > 3 ? size -3 : size) + '...'
+// }
+//
+// console.log(trim("Creating kata is fun", 14))
