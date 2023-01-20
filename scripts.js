@@ -402,8 +402,24 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(descendingOrder(12345 ))
 // console.log(descendingOrder(42145 ))
 
-const consonantCount = (str) => str.replace(/[aeiou]|[^a-z]/gi,'').length
+// const consonantCount = (str) => str.replace(/[aeiou]|[^a-z]/gi,'').length
+//
+//
+// console.log(consonantCount('XaeiouX'))
 
 
-console.log(consonantCount('XaeiouX'))
+const isSquare = (n) => {
+    if (n < 0) {
+        return false
+    }
 
+    for (let i = 0; i <= n; i++) {
+        if (i * i === n) {
+            return true
+        } else if (i * i > n) {
+            return false
+        }
+    }
+}
+
+console.log(isSquare(-1))
