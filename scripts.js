@@ -429,3 +429,18 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // console.log(trim("Creating kata is fun", 14))
+
+// function addToList(item, list) {
+//     return list.push(item)
+// }
+//
+// const result = addToList('apple', ['banana'])
+//
+// console.log(result)
+
+const arr1 = [{firstName: 'Anna'}]
+const arr2 = [{...arr1[0]}]
+arr2[0].firstName = 'Artur'
+
+console.log(arr1)
+console.log(arr2)
