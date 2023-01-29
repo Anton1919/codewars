@@ -455,12 +455,12 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(sumOfIntegersInString("from 1929 to 1939.")) //18
 
-function makeMove(sticks) {
-    if(sticks % 4 == 0) {
-        return Math.random() * 3 +1
-    }
-    return sticks % 4
-}
-
-console.log(makeMove(21))
+// function makeMove(sticks) {
+//     if(sticks % 4 == 0) {
+//         return Math.random() * 3 +1
+//     }
+//     return sticks % 4
+// }
+//
+// console.log(makeMove(21))
 
