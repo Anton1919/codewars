@@ -438,9 +438,19 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(result)
 
-const arr1 = [{firstName: 'Anna'}]
-const arr2 = [{...arr1[0]}]
-arr2[0].firstName = 'Artur'
+// const arr1 = [{firstName: 'Anna'}]
+// const arr2 = [{...arr1[0]}]
+// arr2[0].firstName = 'Artur'
+//
+// console.log(arr1)
+// console.log(arr2)
 
-console.log(arr1)
-console.log(arr2)
+
+function sumOfIntegersInString(s) {
+
+return console.log(s
+    .split(" ").map(el => Number(el)).reduce((a, b) => a + b))
+
+}
+
+console.log(sumOfIntegersInString("from 1929 to 1939.")) //18
