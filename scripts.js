@@ -464,3 +464,18 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(makeMove(21))
 
+function convertHashToArray(hash){
+
+    const keys = Object.keys(hash)
+    const values = Object.values(hash)
+
+    const result = []
+
+    for (let i = 0; i < keys.length; i++) {
+        result.push([keys[i], values[i] ])
+    }
+
+    return result.sort()
+}
+
+console.log(convertHashToArray({name: 'Jeremy', age: 24, role: 'Software Engineer'}))
