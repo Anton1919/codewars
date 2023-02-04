@@ -492,3 +492,11 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(covfefe("coverage coverage"))
 // console.log(covfefe("nothing"))
 // console.log(covfefe("double space "))
+
+function largest(n, array) {
+    return n === 0 ? [] : array.sort((a, b) => a - b).splice(-n)
+}
+
+console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]))
+console.log(largest(0, [7, 6, 5, 4, 3, 2, 1]))
+console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
