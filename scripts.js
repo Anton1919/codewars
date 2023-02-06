@@ -500,3 +500,11 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]))
 // console.log(largest(0, [7, 6, 5, 4, 3, 2, 1]))
 // console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+
+
+// function run() {
+//     let a = Promise.resolve((Math.random() * 10).toFixed())
+//     return a
+// }
+//
+// run().then(n => console.log(n) )
