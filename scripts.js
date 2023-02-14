@@ -508,3 +508,9 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // run().then(n => console.log(n) )
+
+// const promise = new Promise((res, rej) => {
+//    setTimeout(() => res() , 3000)
+// }).then((data) => console.log(data))
+//
+// console.log(promise)
