@@ -514,3 +514,47 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }).then((data) => console.log(data))
 //
 // console.log(promise)
+
+function solve(s){
+    let a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let b = "abcdefghijklmnopqrstuvwxyz";
+    let c = '1234567890';
+    let up = 0;
+    let low = 0;
+    let num = 0;
+    let char = 0;
+    s = s.split('');
+
+    for (let i = 0; i < s.length; i++) {
+        if(a.includes(s[i])) {up++}
+        if(b.includes(s[i])) {low++}
+        if(c.includes(s[i])) {num++}
+        if (!a.includes(s[i]) && !b.includes(s[i]) && !c.includes(s[i])) char++
+    }
+
+    return [up,low,num,char];
+}
+
+console.log(solve("*'&ABCDabcde12345"))
+
+// function solve(s) {
+//
+//     let capitalsLetter = 0
+//     let lowerCasesLetter = 0
+//     let numbers = 0
+//     let symbols = 0
+//
+//     s.split('').forEach(letter => {
+//         if(/[a-z]/.test(letter)) lowerCasesLetter++
+//         else if(/[A-Z]/.test(letter)) capitalsLetter++
+//         else if(/[0-9]/.test(letter)) numbers++
+//         else symbols++
+//     })
+//
+//     return [capitalsLetter, lowerCasesLetter, numbers, symbols]
+// }
+//
+// console.log(solve("*'&ABCDabcde12345"))
+
+
+
