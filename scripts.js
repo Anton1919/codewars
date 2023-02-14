@@ -515,46 +515,91 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(promise)
 
-function solve(s){
-    let a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let b = "abcdefghijklmnopqrstuvwxyz";
-    let c = '1234567890';
-    let up = 0;
-    let low = 0;
-    let num = 0;
-    let char = 0;
-    s = s.split('');
-
-    for (let i = 0; i < s.length; i++) {
-        if(a.includes(s[i])) {up++}
-        if(b.includes(s[i])) {low++}
-        if(c.includes(s[i])) {num++}
-        if (!a.includes(s[i]) && !b.includes(s[i]) && !c.includes(s[i])) char++
-    }
-
-    return [up,low,num,char];
-}
-
-console.log(solve("*'&ABCDabcde12345"))
-
-// function solve(s) {
+// function solve(s){
+//     let a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     let b = "abcdefghijklmnopqrstuvwxyz";
+//     let c = '1234567890';
+//     let up = 0;
+//     let low = 0;
+//     let num = 0;
+//     let char = 0;
+//     s = s.split('');
 //
-//     let capitalsLetter = 0
-//     let lowerCasesLetter = 0
-//     let numbers = 0
-//     let symbols = 0
+//     for (let i = 0; i < s.length; i++) {
+//         if(a.includes(s[i])) {up++}
+//         if(b.includes(s[i])) {low++}
+//         if(c.includes(s[i])) {num++}
+//         if (!a.includes(s[i]) && !b.includes(s[i]) && !c.includes(s[i])) char++
+//     }
 //
-//     s.split('').forEach(letter => {
-//         if(/[a-z]/.test(letter)) lowerCasesLetter++
-//         else if(/[A-Z]/.test(letter)) capitalsLetter++
-//         else if(/[0-9]/.test(letter)) numbers++
-//         else symbols++
-//     })
-//
-//     return [capitalsLetter, lowerCasesLetter, numbers, symbols]
+//     return [up,low,num,char];
 // }
 //
 // console.log(solve("*'&ABCDabcde12345"))
+//
+// // function solve(s) {
+// //
+// //     let capitalsLetter = 0
+// //     let lowerCasesLetter = 0
+// //     let numbers = 0
+// //     let symbols = 0
+// //
+// //     s.split('').forEach(letter => {
+// //         if(/[a-z]/.test(letter)) lowerCasesLetter++
+// //         else if(/[A-Z]/.test(letter)) capitalsLetter++
+// //         else if(/[0-9]/.test(letter)) numbers++
+// //         else symbols++
+// //     })
+// //
+// //     return [capitalsLetter, lowerCasesLetter, numbers, symbols]
+// // }
+// //
+// // console.log(solve("*'&ABCDabcde12345"))
 
 
+// function sumCubes(n){
+//
+//     let res = []
+//
+//    for (let i = 1; i <= n; i++ ) {
+//
+//        res.push(Math.pow(i, 3))
+//    }
+//
+//    return res.reduce((a, b) => a + b)
+// }
+//
+// console.log(sumCubes(3 ))
 
+// function sumOfMinimums(arr) {
+//
+//     let res = []
+//     for(let i = 0; i < arr.length; i++) {
+//         res.push(Math.min(...arr[i]))
+//     }
+//
+//
+//     return res.reduce((a, b) => a + b)
+// }
+//
+// console.log(sumOfMinimums([
+//     [1, 2, 3, 4, 5],
+//     [5, 6, 7, 8, 9],
+//     [20, 21, 34, 56, 100]
+// ]))
+
+
+// function addLength(str) {
+//
+//     let arr = str.split(' ')
+//
+//     let res = []
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         res.push(arr[i] + " " + arr[i].length)
+//     }
+//
+//     return res
+// }
+//
+// console.log(addLength("apple ban"))
