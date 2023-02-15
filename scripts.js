@@ -603,3 +603,18 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // console.log(addLength("apple ban"))
+
+
+// function getSumOfDigits(integer) {
+//
+//     return integer.toString().split('').map(e => +e).reduce((a,b) => a+b)
+// }
+//
+// console.log(getSumOfDigits(123))
+
+//preload variable: dict
+
+var makeBackronym = function(string){
+    //your code here
+    return "";
+};
