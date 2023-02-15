@@ -637,20 +637,19 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(makeBackronym("disturbing gregarious mustache"))
 // console.log(makeBackronym("d"))
 
-const number = (busStops) => {
+// const number = (busStops) => {
+//     let getOn = []
+//     let getOff = []
+//
+//     for (let i = 0; i < busStops.length; i++) {
+//         getOn.push(busStops[i][0])
+//         getOff.push(busStops[i][1])
+//     }
+//     return getOn.reduce((a, b) => a + b) - getOff.reduce((a, b) => a + b)
+// }
+//
+// console.log(number([[10, 0], [3, 5], [5, 8]]))
 
-    let getOn = []
-    let getOff = []
 
 
-    let result = 0
 
-    for (let i = 0; i < busStops.length; i++)  {
-        getOn.push(busStops[i][0])
-        getOff.push(busStops[i][1])
-    }
-
-    return getOn.reduce((a ,b) => a+b) - getOff.reduce((a ,b) => a+b)
-}
-
-console.log(number([[10,0],[3,5],[5,8]]))
