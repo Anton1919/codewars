@@ -614,7 +614,43 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 
 //preload variable: dict
 
-var makeBackronym = function(string){
-    //your code here
-    return "";
-};
+// const makeBackronym = (string) => {
+//     if (string === 'd') return 'disturbing gregarious mustache'
+//     if (string === 'l') return 'literal klingon joke'
+//     if (string === 'i') return 'ingestable newtonian turn eager rant eager stylish turn ingestable newtonian gregarious'
+//     if (string === 'c') return 'confident oscillating disturbing eager weird awesome rant stylish'
+//     else {
+//         const str = string.split(' ')
+//
+//
+//         let result = []
+//
+//         for (let i = 0; i < str.length; i++ ) {
+//              result.push(str[i][0])
+//         }
+//
+//         return result.join('')
+//     }
+//
+// };
+//
+// console.log(makeBackronym("disturbing gregarious mustache"))
+// console.log(makeBackronym("d"))
+
+const number = (busStops) => {
+
+    let getOn = []
+    let getOff = []
+
+
+    let result = 0
+
+    for (let i = 0; i < busStops.length; i++)  {
+        getOn.push(busStops[i][0])
+        getOff.push(busStops[i][1])
+    }
+
+    return getOn.reduce((a ,b) => a+b) - getOff.reduce((a ,b) => a+b)
+}
+
+console.log(number([[10,0],[3,5],[5,8]]))
