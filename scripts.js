@@ -650,10 +650,26 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(number([[10, 0], [3, 5], [5, 8]]))
 
-function multiplyAll(arr) {
-    return function multiply_all (num) {
-        return arr.map(el => el * num)
-    }
-}
-console.log(multiplyAll([1, 2, 3]) (2))
+// function multiplyAll(arr) {
+//     return function multiply_all (num) {
+//         return arr.map(el => el * num)
+//     }
+// }
+// console.log(multiplyAll([1, 2, 3]) (2))
+
+// function truncateString(str, num) {
+//     const string = str
+//
+//     if (num <= 3) {
+//         return string.slice(0, num) + '...'
+//     } else if (num > string.length) {
+//         return string
+//     } else {
+//         return string.slice(0, (num -3)) + '...'
+//     }
+// }
+//
+// console.log(truncateString('A-tisket a-tasket A green and yellow basket', 43))
+
+
 
