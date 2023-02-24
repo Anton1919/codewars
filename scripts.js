@@ -671,16 +671,32 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(truncateString('A-tisket a-tasket A green and yellow basket', 43))
 
-function cyclops(n) {
+// function cyclops(n) {
+//
+//     let binaryNum = n.toString(2).split('0');
+//
+//     console.log(binaryNum)
+//
+//     return binaryNum.length == 2 && binaryNum[0] == binaryNum[1];
+// }
+//
+//
+// console.log(cyclops(13))
 
-    let binaryNum = n.toString(2).split('0');
+function sumNoDuplicates(numList) {
 
-    console.log(binaryNum)
 
-    return binaryNum.length == 2 && binaryNum[0] == binaryNum[1];
+    let res = []
+
+    for (let i = 0; i < numList.length; i++) {
+        numList.indexOf(numList[i]) === numList.lastIndexOf(numList[i]) && res.push(numList[i])
+    }
+
+   return   res.length === 0 ? 0: res.reduce((a , b) => a + b)
+
+
 }
 
-
-console.log(cyclops(13))
-
-
+console.log(sumNoDuplicates([3, 4, 3, 6]))
+console.log(sumNoDuplicates([]))
+console.log(sumNoDuplicates([1, 9, 9, 5, 7, 7, 6, 1, 5, 6]))
