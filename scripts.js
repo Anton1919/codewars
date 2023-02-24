@@ -668,10 +668,19 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //         return string.slice(0, (num -3)) + '...'
 //     }
 // }
-
 //
 // console.log(truncateString('A-tisket a-tasket A green and yellow basket', 43))
 
+function cyclops(n) {
 
+    let binaryNum = n.toString(2).split('0');
+
+    console.log(binaryNum)
+
+    return binaryNum.length == 2 && binaryNum[0] == binaryNum[1];
+}
+
+
+console.log(cyclops(13))
 
 
