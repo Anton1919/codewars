@@ -683,20 +683,39 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(cyclops(13))
 
-function sumNoDuplicates(numList) {
+// function sumNoDuplicates(numList) {
+//
+//
+//     let res = []
+//
+//     for (let i = 0; i < numList.length; i++) {
+//         numList.indexOf(numList[i]) === numList.lastIndexOf(numList[i]) && res.push(numList[i])
+//     }
+//
+//    return   res.length === 0 ? 0: res.reduce((a , b) => a + b)
+//
+//
+// }
+//
+// console.log(sumNoDuplicates([3, 4, 3, 6]))
+// console.log(sumNoDuplicates([]))
+// console.log(sumNoDuplicates([1, 9, 9, 5, 7, 7, 6, 1, 5, 6]))
 
+function arithmeticSequenceElements(a, d, n) {
 
-    let res = []
+    let result = [a,]
 
-    for (let i = 0; i < numList.length; i++) {
-        numList.indexOf(numList[i]) === numList.lastIndexOf(numList[i]) && res.push(numList[i])
+    let num = a
+
+    for (let i = 0; i < n -1; i++) {
+        console.log({n})
+        num = num + d
+        result.push(num)
     }
 
-   return   res.length === 0 ? 0: res.reduce((a , b) => a + b)
-
+    return result.join(", ")
 
 }
 
-console.log(sumNoDuplicates([3, 4, 3, 6]))
-console.log(sumNoDuplicates([]))
-console.log(sumNoDuplicates([1, 9, 9, 5, 7, 7, 6, 1, 5, 6]))
+console.log(arithmeticSequenceElements(1, 2, 5))
+
