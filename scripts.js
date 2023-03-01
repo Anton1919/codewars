@@ -701,21 +701,26 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(sumNoDuplicates([]))
 // console.log(sumNoDuplicates([1, 9, 9, 5, 7, 7, 6, 1, 5, 6]))
 
-function arithmeticSequenceElements(a, d, n) {
+// function arithmeticSequenceElements(a, d, n) {
+//     let result = [a,]
+//     let num = a
+//     for (let i = 0; i < n -1; i++) {
+//         console.log({n})
+//         num = num + d
+//         result.push(num)
+//     }
+//     return result.join(", ")
+// }
+// console.log(arithmeticSequenceElements(1, 2, 5))
 
-    let result = [a,]
+function missingWord(nums) {
 
-    let num = a
+    let sort = nums.sort((a, b) => a > b ? -1 : 1)
 
-    for (let i = 0; i < n -1; i++) {
-        console.log({n})
-        num = num + d
-        result.push(num)
-    }
+    let result = sort.join(' ')
 
-    return result.join(", ")
+    return result
 
 }
 
-console.log(arithmeticSequenceElements(1, 2, 5))
-
+console.log(missingWord([29, 31, 8]))
