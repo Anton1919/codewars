@@ -725,8 +725,9 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // console.log(missingWord([29, 31, 8]))
 
-function last(x) {
-    return x.split(' ').sort((a, b) => a[a.length -1] < b[b.length -1] ? -1 : 1)
-}
 
-console.log(last('man i need a taxi up to ubud'))
+// function upperCase(str) {
+//     return str.match(/[A-Z]/g)
+// }
+//
+// console.log(upperCase("i lOvE a BeauTiFul cAr"))
