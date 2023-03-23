@@ -730,3 +730,42 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // console.log(upperCase("i lOvE a BeauTiFul cAr"))
+
+//
+// function wait(sec) {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res("error")
+//         }, sec)
+//     })
+// }
+//
+// async function run(sec) {
+//     await wait(sec)
+//     console.log(1)
+//     await wait(sec)
+//     console.log(2)
+//     await wait(sec)
+//     console.log(3)
+// }
+//
+// run(1000)
+
+// function validParentheses(parenStr) {
+//     let count = 0
+//     for (let i = 0; i < parenStr.length; i++) {
+//         if (parenStr[i] === "(") count++
+//         if (parenStr[i] === ")") count--
+//         if (count < 0) return false
+//     }
+//     return count === 0
+// }
+//
+// console.log(validParentheses(")("))
+// console.log(validParentheses("(()()"))
+
+// function divCon(x) {
+//     return x.reduce((acc, cur) => typeof cur === "number" ? acc + cur : acc - Number(cur), 0)
+// }
+//
+// console.log(divCon([9, 3, '7', '3']))
