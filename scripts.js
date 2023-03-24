@@ -769,3 +769,32 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // console.log(divCon([9, 3, '7', '3']))
+
+// const mispelled = (word1, word2) => {
+//     if (word1.length > word2.length + 1 || word2.length > word1.length + 1) return false
+//     const w1 = word1.split('')
+//     const w2 = word2.split('')
+//     let res = []
+//     for (let i = 0; i < w1.length; i++) {
+//         word1[i] !== word2[i] && res.push(word1[i])
+//         // w2.indexOf(w1[i]) > -1 && res.push(w1[i])
+//     }
+//     const result = res.join('')
+//     return res
+// }
+
+// console.log(mispelled('versed', 'v5rsed'))
+
+const kookaCounter = (laughing) => {
+    let array = laughing.split("a"),
+        result = 0
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] !== array[i - 1]) {
+            console.log(array[i])
+            result++
+        }
+    }
+    return result
+}
+
+console.log(kookaCounter("HaHaHahaha"))
