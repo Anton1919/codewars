@@ -785,16 +785,52 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 
 // console.log(mispelled('versed', 'v5rsed'))
 
-const kookaCounter = (laughing) => {
-    let array = laughing.split("a"),
-        result = 0
-    for (let i = 1; i < array.length; i++) {
-        if (array[i] !== array[i - 1]) {
-            console.log(array[i])
-            result++
-        }
+// const kookaCounter = (laughing) => {
+//     let array = laughing.split("a"),
+//         result = 0
+//     for (let i = 1; i < array.length; i++) {
+//         if (array[i] !== array[i - 1]) {
+//             console.log(array[i])
+//             result++
+//         }
+//     }
+//     return result
+// }
+//
+// console.log(kookaCounter("HaHaHahaha"))
+
+
+// function maskify(cc) {
+//     let start = cc.split('').slice(0, -4).join('').replace(/./g, "#")
+//     let end = cc.split('').slice(-4).join('')
+//     return start + end
+// }
+//
+// console.log(maskify('11111'))
+
+function alphabetWar(fight) {
+    let rightTeamCount = []
+    let leftTeamCount = []
+
+    for (let i = 0; i < fight.length; i++) {
+        if (fight[i] === "m") rightTeamCount.push(4)
+        if (fight[i] === "q") rightTeamCount.push(3)
+        if (fight[i] === "d") rightTeamCount.push(2)
+        if (fight[i] === "z") rightTeamCount.push(1)
+        if (fight[i] === "w") leftTeamCount.push(4)
+        if (fight[i] === "p") leftTeamCount.push(3)
+        if (fight[i] === "b") leftTeamCount.push(2)
+        if (fight[i] === "s") leftTeamCount.push(1)
     }
-    return result
+
+    const rightResult = rightTeamCount.reduce((a, b) => a + b, 0)
+    const leftResult = leftTeamCount.reduce((a, b) => a + b, 0)
+
+    return rightResult === leftResult
+        ? "Let's fight again!"
+        : `${rightResult > leftResult ? 'Right' : 'Left'} side wins!`
+
+
 }
 
-console.log(kookaCounter("HaHaHahaha"))
+console.log(alphabetWar("wwmmm"))
