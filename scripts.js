@@ -807,30 +807,30 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // console.log(maskify('11111'))
-
-function alphabetWar(fight) {
-    let rightTeamCount = []
-    let leftTeamCount = []
-
-    for (let i = 0; i < fight.length; i++) {
-        if (fight[i] === "m") rightTeamCount.push(4)
-        if (fight[i] === "q") rightTeamCount.push(3)
-        if (fight[i] === "d") rightTeamCount.push(2)
-        if (fight[i] === "z") rightTeamCount.push(1)
-        if (fight[i] === "w") leftTeamCount.push(4)
-        if (fight[i] === "p") leftTeamCount.push(3)
-        if (fight[i] === "b") leftTeamCount.push(2)
-        if (fight[i] === "s") leftTeamCount.push(1)
-    }
-
-    const rightResult = rightTeamCount.reduce((a, b) => a + b, 0)
-    const leftResult = leftTeamCount.reduce((a, b) => a + b, 0)
-
-    return rightResult === leftResult
-        ? "Let's fight again!"
-        : `${rightResult > leftResult ? 'Right' : 'Left'} side wins!`
-
-
-}
-
-console.log(alphabetWar("wwmmm"))
+//
+// function alphabetWar(fight) {
+//     let rightTeamCount = []
+//     let leftTeamCount = []
+//
+//     for (let i = 0; i < fight.length; i++) {
+//         if (fight[i] === "m") rightTeamCount.push(4)
+//         if (fight[i] === "q") rightTeamCount.push(3)
+//         if (fight[i] === "d") rightTeamCount.push(2)
+//         if (fight[i] === "z") rightTeamCount.push(1)
+//         if (fight[i] === "w") leftTeamCount.push(4)
+//         if (fight[i] === "p") leftTeamCount.push(3)
+//         if (fight[i] === "b") leftTeamCount.push(2)
+//         if (fight[i] === "s") leftTeamCount.push(1)
+//     }
+//
+//     const rightResult = rightTeamCount.reduce((a, b) => a + b, 0)
+//     const leftResult = leftTeamCount.reduce((a, b) => a + b, 0)
+//
+//     return rightResult === leftResult
+//         ? "Let's fight again!"
+//         : `${rightResult > leftResult ? 'Right' : 'Left'} side wins!`
+//
+//
+// }
+//
+// console.log(alphabetWar("wwmmm"))
