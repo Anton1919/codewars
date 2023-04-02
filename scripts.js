@@ -834,19 +834,19 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // }
 //
 // console.log(alphabetWar("wwmmm"))
-function sortMyString(S) {
-    let even = []
-    let odd = []
-    for (let i = 0; i < S.length; i++) {
-        if(i % 2 === 0) {
-            even.push(S[i])
-        } else {
-            odd.push(S[i])
-        }
-    }
-
-    return even.join('') + ' ' + odd.join('')
-}
-
-// console.log(sortMyString("CodeWars"))
-console.log(sortMyString("YCOLUE'VREER"))
+// function sortMyString(S) {
+//     let even = []
+//     let odd = []
+//     for (let i = 0; i < S.length; i++) {
+//         if(i % 2 === 0) {
+//             even.push(S[i])
+//         } else {
+//             odd.push(S[i])
+//         }
+//     }
+//
+//     return even.join('') + ' ' + odd.join('')
+// }
+//
+// // console.log(sortMyString("CodeWars"))
+// console.log(sortMyString("YCOLUE'VREER"))
