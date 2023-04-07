@@ -850,3 +850,20 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 //
 // // console.log(sortMyString("CodeWars"))
 // console.log(sortMyString("YCOLUE'VREER"))
+
+function sumEvenNumbers(input) {
+    const even = []
+    for (let i = 0; i < input.length; i++) {
+        if (input[i] % 2 === 0) {
+            even.push(input[i])
+        }
+    }
+    if(even.length) {
+        return even.reduce((a, b) => a + b)
+    } else {
+        return 0
+    }
+}
+
+
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
