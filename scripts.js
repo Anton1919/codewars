@@ -851,19 +851,40 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // // console.log(sortMyString("CodeWars"))
 // console.log(sortMyString("YCOLUE'VREER"))
 
-function sumEvenNumbers(input) {
-    const even = []
-    for (let i = 0; i < input.length; i++) {
-        if (input[i] % 2 === 0) {
-            even.push(input[i])
-        }
-    }
-    if(even.length) {
-        return even.reduce((a, b) => a + b)
-    } else {
-        return 0
-    }
+// function sumEvenNumbers(input) {
+//     const even = []
+//     for (let i = 0; i < input.length; i++) {
+//         if (input[i] % 2 === 0) {
+//             even.push(input[i])
+//         }
+//     }
+//     if(even.length) {
+//         return even.reduce((a, b) => a + b)
+//     } else {
+//         return 0
+//     }
+// }
+//
+//
+// console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+//
+// function isPowerOfTwo(n) {
+//     if (n === 0) return false
+//     for (let i = 0; i < n; i++) {
+//         if (Math.pow(2, i) > n) {
+//             return false
+//         } else if (Math.pow(2, i) === n) {
+//             return true
+//         }
+//     }
+// }
+//
+// console.log(isPowerOfTwo(4096))
+// console.log(isPowerOfTwo(5))
+
+function consecutive(arr) {
+    return arr.length ? Math.max(...arr) - Math.min(...arr) + 1 - arr.length : 0
 }
 
-
-console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+// console.log(consecutive([1, 2, 3, 4]))
+console.log(consecutive( [8, 6, 4]))
