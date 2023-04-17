@@ -882,9 +882,12 @@ console.log(barTriang([4, 6], [12, 4], [10, 10]))*/ // [8.6667, 6.6667]
 // console.log(isPowerOfTwo(4096))
 // console.log(isPowerOfTwo(5))
 
-function consecutive(arr) {
-    return arr.length ? Math.max(...arr) - Math.min(...arr) + 1 - arr.length : 0
+function keepOrder(ary, val) {
+    const arr = [...ary]
+    arr.push(val)
+    arr.sort((a, b) => a  -b )
+   return  arr.indexOf(val)
 }
 
-// console.log(consecutive([1, 2, 3, 4]))
-console.log(consecutive( [8, 6, 4]))
+console.log(keepOrder( [1, 1, 2, 2, 2], 2))
+// console.log(remove("Hi! Hi!! Hi!"))
